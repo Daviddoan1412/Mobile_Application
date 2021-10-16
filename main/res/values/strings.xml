@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">facebook</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_name">User Name</string>
+    <string name="edit_bio">Edit Bio</string>
+    <string name="add_story">Add to Story</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="university">Studied at Information and Technology of Hanoi</string>
+    <string name="high_school">Studied at Hanoi High School</string>
+    <string name="live">Lives in Hanoi, Vietnam</string>
+    <string name="from">From Hanoi, Vietnam</string>
+    <string name="detail">See your about info</string>
+    <string name="edit_detail">Edit Public Detail</string>
+</resources>
