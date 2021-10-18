@@ -6,9 +6,8 @@ Team members:
 4. Đặng Thái Sơn
 5. Đỗ Công Hòa
 
-#Date 15/10/2021:
 Phân công việc
-==> Tạo NewPages: Long
++ Tạo NewPages: Long
 + Newfeed: Long
 + Profile: Chương
 + Watch: Hòa
