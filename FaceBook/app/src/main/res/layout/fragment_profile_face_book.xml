@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/cover_image"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_marginTop="150dp"
+                android:src="@drawable/profile" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/user_name"
+                android:layout_marginBottom="7dp"
+                android:textColor="#E4191818"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/edit_bio"
+                android:textColor="#C1191818"
+                android:layout_marginBottom="15dp"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_story"
+                    android:backgroundTint="#B51094EA"
+                    android:layout_marginRight="10dp">
+                </Button>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_profile"
+                    android:backgroundTint="#B51094EA"
+                    android:layout_marginRight="10dp">
+                </Button>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="..."
+                    android:backgroundTint="#B51094EA"
+                    android:padding="0dp">
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/graduation"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/university"
+                    android:textColor="#CE393737"
+                    android:paddingTop="5dp"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/graduation"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/high_school"
+                    android:textColor="#CE393737"
+                    android:paddingTop="5dp"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/home"
+                    android:layout_marginRight="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/live"
+                    android:paddingTop="5dp"
+                    android:textColor="#CE393737"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/location"
+                    android:layout_marginRight="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/from"
+                    android:textColor="#CE393737"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/detail"
+                    android:layout_marginRight="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:paddingTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail"
+                    android:textColor="#CE393737"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E11094EA"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/edit_detail">
+
+        </Button>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Friends"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="450 friends"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_marginBottom="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:src="@drawable/eco"
+                        app:civ_border_color="#C0C0C0"
+                        app:civ_border_width="1dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Long Hack"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:src="@drawable/ava3"
+                        app:civ_border_color="#C0C0C0"
+                        app:civ_border_width="1dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Son Dang"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:src="@drawable/ava4"
+                        app:civ_border_color="#C0C0C0"
+                        app:civ_border_width="1dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="USTH"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:src="@drawable/eco"
+                        app:civ_border_color="#C0C0C0"
+                        app:civ_border_width="1dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:text="Hieu Nguyen"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:src="@drawable/ava3"
+                        app:civ_border_color="#C0C0C0"
+                        app:civ_border_width="1dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chuong"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:src="@drawable/ava4"
+                        app:civ_border_color="#C0C0C0"
+                        app:civ_border_width="1dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Hoa Dc"
+                        android:layout_marginLeft="17dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E11094EA"
+                android:layout_marginBottom="15dp"
+                android:text="See All Friends"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <!---           Header                -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/newnxb_kimdong" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/New1"
+                    android:textSize="50px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="45dp"
+                    android:text="@string/New1a"
+                    android:textSize="8dp"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="22dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/newdautichxanh" />
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/add_photo"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--        Body       -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/New1b"
+                    android:layout_marginLeft="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/New1c"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/New1d"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="40dp"/>
+
+                <ImageView
+                    android:id="@+id/kimdong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:src="@drawable/newnxb_kimdong1_image" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/newlike_comment"
+                    android:layout_marginLeft="8dp" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/newlove"
+                    android:layout_marginLeft="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.4K"
+                    android:layout_marginLeft="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/New1e"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <!--      TODO:     comment-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <Button
+                    android:id="@+id/buttonproflie1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:backgroundTint="@color/Silver"
+                    android:drawableLeft="@drawable/likes"
+                    android:gravity="center"
+                    android:text="@string/like"
+                    android:textColor="@android:color/black"
+                    app:iconPadding="5dp" />
+
+                <Button
+                    android:id="@+id/buttonproflie2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="28dp"
+                    android:backgroundTint="@color/Silver"
+                    android:drawableLeft="@drawable/ic_stat_name"
+                    android:paddingLeft="10dp"
+                    android:text="Comment"
+                    android:textColor="@android:color/black"
+                    android:visibility="visible"
+                    app:iconPadding="2dp" />
+
+                <Button
+                    android:id="@+id/buttonproflie3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/Silver"
+                    android:drawableLeft="@drawable/ic_share_name"
+                    android:gravity="center"
+                    android:text="Share"
+                    android:textColor="@android:color/black"
+                    app:iconPadding="5dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- TODO: Update blank fragment layout  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/newlogo4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/New4"
+                    android:textSize="40px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/New4a"
+                    android:textSize="10dp"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/New4b" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:text=" Thôi đập rồi chǎng? một trái tim
+                                    \n Đỏ như sao Hoả, sáng sao Kim!
+                                    \n Muốn oà nức nở bên em nhỏ
+                                    \n Nước mắt ta đành nuốt, lặng im." />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="90dp"
+                    android:text=" \n Cứ nghĩ: Hồn thiêng đang tái sinh
+                                       \n Ngôi sao ấy lặn, hoá bình minh
+                                       \n Cơn mưa vừa tạnh. Ba Đình nắng
+                                       \n Bác đứng trên kia, vẫy gọi mình.
+                                       \n\nSúng hãy gầm lên, nén xót đau
+                                       \n Hãy lau ráo lệ, ngẩng cao đầu!
+                                       \n Chỉ xin nhớ để lời đêm trước
+                                       \n Đốt pháo hoa mừng, đến lễ sau." />
+
+                <ImageView
+                    android:id="@+id/imag4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="200dp"
+                    android:src="@drawable/newimage4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="720dp"
+                    android:text="@string/New4c" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="770dp"
+                    android:text="@string/New4d" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/newlike_comment" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/newlove" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="1.900k" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/New4e" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <!--      TODO:     comment-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/white"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <Button
+                android:id="@+id/buttonproflie4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:backgroundTint="@color/Silver"
+                android:drawableLeft="@drawable/likes"
+                android:gravity="center"
+                android:text="@string/like"
+                android:textColor="@android:color/black"
+                app:iconPadding="5dp" />
+
+            <Button
+                android:id="@+id/buttonproflie5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="28dp"
+                android:backgroundTint="@color/Silver"
+                android:drawableLeft="@drawable/ic_stat_name"
+                android:paddingLeft="10dp"
+                android:text="Comment"
+                android:textColor="@android:color/black"
+                android:visibility="visible"
+                app:iconPadding="2dp" />
+
+            <Button
+                android:id="@+id/buttonproflie6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/Silver"
+                android:drawableLeft="@drawable/ic_share_name"
+                android:gravity="center"
+                android:text="Share"
+                android:textColor="@android:color/black"
+                app:iconPadding="5dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
